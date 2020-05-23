@@ -1,12 +1,12 @@
-class X11
+class X111
 {
     static
     {
-        Y11.methodOfY();
+        Y111.methodOfY();
     }
 }
  
-class Y11 extends X11
+class Y111 extends X111
 {
     static void methodOfY()
     {
@@ -14,10 +14,10 @@ class Y11 extends X11
     }
 }
  
-public class MainClass
+public class MainClass1
 {
     public static void main(String[] args)
     {
-        Y11.methodOfY();
+        Y111.methodOfY();
     }
 }

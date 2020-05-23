@@ -19,14 +19,9 @@ public class StaticVariable{
       emp1.age = 2;
 	  emp1.name = "as";
       emp1.disp();
-
-      System.out.println("emp: "+emp.age ); 
-      System.out.println("emp1: "+emp1.age ); 
-      
-      System.out.println("emp: "+emp.name ); 
-      System.out.println("emp1: "+emp1.name ); 
       
       emp.disp();
+      emp1.disp();
 
   
   }

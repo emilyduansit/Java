@@ -5,6 +5,7 @@ class A1
  
 class B1 extends A1
 {
+    
     A1 a;
  
     public B1(A1 a)
