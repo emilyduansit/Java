@@ -22,6 +22,6 @@ public class UnreachedCodeinJava {
  
         return;
  
-        System.out.println("Unreachable Statement");     //Compile Time Error
+     //   System.out.println("Unreachable Statement");     //Compile Time Error
     }
 }

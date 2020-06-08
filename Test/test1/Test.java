@@ -5,6 +5,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
+
+
 public  class Test {
 
     static String text2 = "b";
@@ -13,6 +15,7 @@ public  class Test {
     String text3;
 
  //   float f = 1.23f;
+    static int number;
 
  
 
@@ -58,17 +61,41 @@ class boo extends Test{
         // a = new Test();
 
   
-        String string1 =Arrays.toString(args);
-        System.out.println(string1);
+        // String string1 =Arrays.toString(args);
+        // System.out.println(string1);
 
-
+        // Object[][] strings = new String[2][2];
+        // strings[1][1] = "test";
+        // strings[0] = new String[1];
+        // strings[1] = new String[3];
+        // System.out.println(strings[1][1]);
 
  
       //  a.mthodprint();
 
      //   System.out.println(x);
       
+    //  int i;
+    //     for(i=0;i<5;i++,System.out.println(i+ " ")){
+           
+    //         i++;
+            
+    //     }
 
+    // String s1 = "abcd";
+    // StringBuilder s2 = new StringBuilder("abcd");    
+    // StringBuilder s3 = new StringBuilder("abcd");
+    // System.out.println(s2.toString().equals(s3.toString()));
+    // System.out.println(s1.equals(s2.toString()));
+
+    String[] a1 = {"1","2","3"};
+    String[] a2 ={};
+    String[] a3 = null;
+
+    System.out.println(Arrays.compare(a1, a2));
+    System.out.println(Arrays.compare(a2, a3));
+    System.out.println(Arrays.compare(a3, a1));
+   
 
 
     }
