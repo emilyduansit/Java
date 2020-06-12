@@ -1,3 +1,8 @@
+//static fields and static methods are not polimorphic.
+//that means we can hide but not override.
+//when hiding happened the memebers of objects are accessed by the refrence type of compling time.
+//see staticmethod()
+
 class StaticComponents
 {
       static int staticVariable;
@@ -8,13 +13,23 @@ class StaticComponents
           staticVariable = 10;
      }
  
-     static  void staticMethod()
+     public static  void staticMethod()
      {
           System.out.println("From StaticMethod");
           System.out.println(staticVariable);
      }
 }
- di
+
+class SubStaticComponents extends StaticComponents
+{
+     public static void staticMethod()
+     {
+          System.out.println("SubStaticComponents");
+     }
+}
+ 
+
+
 class MainClass
 {
      static
@@ -27,6 +42,9 @@ class MainClass
          //Static Members directly accessed with Class Name
           StaticComponents.staticVariable = 20;
           StaticComponents.staticMethod();
+
+          StaticComponents s = new SubStaticComponents();
+          s.staticMethod();
   
      }
 }

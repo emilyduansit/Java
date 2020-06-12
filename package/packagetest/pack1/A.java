@@ -1,21 +1,23 @@
 package pack1;
-class A
+public class A
 {
-    int i;
+    protected static int i;
+
+    
  
-    A()
+    public A()
     {
         //Constructor with default modifier
     }
  
-    void methodOfClassA()
+    public void methodOfClassA()
     {
         //Method with default access modifier
         System.out.println(i);
         B b = new B();
     }
  
-    class B
+    public class B
     {
       //Inner Class with default access modifier
     }

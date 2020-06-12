@@ -1,6 +1,8 @@
 class A
 {
-    int i;
+    static int i = init();
+
+    int j = localinit();
  
     static
     {
@@ -13,7 +15,21 @@ class A
  
     A(int i)
     {
-        System.out.println("Class A Constructor");
+        System.out.println("Class A Constructor i="+i);
+    }
+
+    static int init()
+    {
+        i= 10;
+        System.out.println("Class A static init");
+        return 11;
+    }
+
+    int localinit()
+    {
+        j = 20;
+        System.out.println("Class A local init");
+        return j;
     }
 }
  
@@ -28,7 +44,7 @@ class B extends A
     }
 }
  
-class MainClass
+class SIBIIB
 {
     public static void main(String[] args)
     {
