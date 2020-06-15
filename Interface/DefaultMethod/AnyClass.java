@@ -11,6 +11,7 @@ package DefaultMethod;
 
 interface InterfaceWithDefaultAndStaticMethod
 {
+    int number = 0;
     void abstractMethod();           //Abstract Method
      
     default void defaultMethod()
@@ -30,11 +31,15 @@ class AnyClass implements InterfaceWithDefaultAndStaticMethod
     public void abstractMethod() 
     {
         System.out.println("Abstract Method implemented");
+        ///number++;                           compile error number field is public static final
     }
      
     //No need to implement defaultMethod()
      
     //Can't implement staticMethod()
+
+
+
     public static void main(String[] args) {
         
     }

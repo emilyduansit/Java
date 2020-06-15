@@ -14,6 +14,7 @@ public class Test extends Bar implements Foo {
     public void mymethod()
     {
         System.out.println("test");
+        
     }
     public static void main(String[] args) {
         Foo test = new Test();
