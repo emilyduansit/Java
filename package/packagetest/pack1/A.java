@@ -21,4 +21,11 @@ public class A
     {
       //Inner Class with default access modifier
     }
+
+    public void print(){
+        System.out.println("pack1 A");
+    }
+
+    
 }
+

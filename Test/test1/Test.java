@@ -33,6 +33,11 @@ public  class Test {
        System.out.println(D1.equals(D2)+" "+D2.equals(D3));
        System.out.println(D1);
     }
+
+
+    int increase(int number){
+        return number++;
+    }
 }
 
 class boo extends Test{
@@ -49,10 +54,14 @@ class boo extends Test{
     static boolean x;
 
 
+
+
     public static void main(String[] args) {
       
 
-        // Test a = new Test();
+        Test a = new Test();
+        System.out.println(a.increase(1));
+        System.out.println(1);
 
         // a = new Test();
 
@@ -88,13 +97,15 @@ class boo extends Test{
     // System.out.println(s2.toString().equals(s3.toString()));
     // System.out.println(s1.equals(s2.toString()));
 
-    String[] a1 = {"1","2","3"};
-    String[] a2 ={};
-    String[] a3 = null;
+    // String[] a1 = {"1","2","3"};
+    // String[] a2 ={};
+    // String[] a3 = null;
 
-    System.out.println(Arrays.compare(a1, a2));
-    System.out.println(Arrays.compare(a2, a3));
-    System.out.println(Arrays.compare(a3, a1));
+    // System.out.println(Arrays.compare(a1, a2));
+    // System.out.println(Arrays.compare(a2, a3));
+    // System.out.println(Arrays.compare(a3, a1));
+
+
    
 
 

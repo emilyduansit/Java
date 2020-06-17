@@ -62,10 +62,10 @@ public class Test {
     //       System.out.println("finally");
     //   }
 
-        //block 3
+    //    block 3
 
-        // Test test = new Test();
-        // test.methodC();
+        Test test = new Test();
+        test.methodC();
 
 
  

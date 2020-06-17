@@ -17,12 +17,12 @@ package mypack;
 
 }
 
-class test {
-    public static void main(String[] args)
-    {
-        packagetest.add();
-        packagetest a = new  packagetest();
-        a.show();
+// class test {
+//     public static void main(String[] args)
+//     {
+//         packagetest.add();
+//         packagetest a = new  packagetest();
+//         a.show();
 
-    }
-}
+//     }
+// }
