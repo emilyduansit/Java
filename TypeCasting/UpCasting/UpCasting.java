@@ -1,13 +1,25 @@
 package UpCasting;
 
- 
+
+
 public class UpCasting {
+
+   
     public static void main(String[] args) {
+   
+
+
         System.out.println("Program starts");
         System.out.println("Upcasting");
         C c1=new C();
+        c1.test();//test C
+        System.out.println(c1.myfield);
         B b1=(B)c1;
-        b1.test1();
+        b1.test();//test C
+        System.out.println(b1.myfield);
+        A a1=(A)b1;
+        a1.test();
+        System.out.println(a1.myfield);
         System.out.println("Auto upcasting");
         C cRef=new C();
         Sample3.run(cRef);
@@ -17,23 +29,26 @@ public class UpCasting {
 }
 class A
 {
-    void test1()
+    String myfield = "Class A";
+    void test()
     {
-        System.out.println("Running test1()");
+        System.out.println("Running test A()");
     }
 }
 class B extends A
 {
-    void test2()
+    String myfield = "Class B";
+    void test()
     {
-        System.out.println("Running test2()");
+        System.out.println("Running test B()");
     }
 }
 class C extends B
 {
-    void test3()
+    String myfield = "Class C";
+    void test()
     {
-        System.out.println("Running test3()");
+        System.out.println("Running test C()");
     }
 }
 class Sample3
@@ -42,6 +57,6 @@ class Sample3
     {
         System.out.println("Running run()");
         C cref=(C)aref;//downcasting
-        cref.test1();
+        cref.test();
     }
 }

@@ -6,7 +6,8 @@
 //  * 4.在非构造函数里，super,this 可以用在任何位置。
 //  * 5.如果父类有一个函数被子类继承，override， 这两个函数都是non-static可以，都是static也可以（这种不是override,是hide），不能一个是一个不是。
 //  * 6.两个都是static,子类对象运行的还是子类的方法。
-//  * 7.static 对于父类和所有的子类用的都是用一份copy,无论是用class.staticvariable 还是object.variabale 都可以access,对static的改变影响父类和所有的子类。
+//  * 7.static 对于父类和所有的子类用的都是用一份copy,无论是用class.staticvariable 还是object.variabale 都可以access,
+//  *   对static的改变影响父类和所有的子类。
 //  * 
 //  * 
 //  * Hiding Fields

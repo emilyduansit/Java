@@ -1,8 +1,9 @@
 package package2;
+import pack1.A;
+import pack2.*;
 
 
-
-class C extends pack1.A
+public class C extends pack1.A
 {
     void methodOfClassC()
     {
@@ -17,13 +18,14 @@ class C extends pack1.A
     
 
     public static void main(String[] args) {
-       C c = new C();
+         C c = new C();
        c.methodOfClassC();
 
-        pack1.A a1= new pack1.A();
+        A a1= new A();
         a1.print();
 
         pack2.A a2 = new pack2.A();
         a2.print();
     }
 }
+

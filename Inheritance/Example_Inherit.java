@@ -35,7 +35,7 @@ class ParentClass{
             //Calling the disp() method of parent class        
         }
 
-        void  print()
+        void print()
         {
             System.out.println("children print");
         }

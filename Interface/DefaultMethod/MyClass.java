@@ -21,11 +21,18 @@ If your class inherit multiple methods with same signature then a method from su
 */
 package DefaultMethod;
 
+import java.util.Arrays;
+
 interface InterfaceOne
 {
     default void anyMethod()
     {
         System.out.println("Hi... From Interface One");
+    }
+
+    static void print()
+    {
+        System.out.println("Static From Interface onw");
     }
 }
  
@@ -44,9 +51,18 @@ public class MyClass implements InterfaceOne, InterfaceTwo
     {
         InterfaceTwo.super.anyMethod();
     }
+
+
+
+    static void print()
+    {
+        System.out.println("Static  From Myclass");
+    }
      
     public static void main(String[] args) 
     {
         new MyClass().anyMethod();
+
+      
     }
 }

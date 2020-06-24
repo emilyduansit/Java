@@ -7,7 +7,12 @@ import java.util.Arrays;
 
 
 
+
+
 public  class Test {
+
+    String string = "string";
+    static String statstring = "statstring";
 
     static String text2 = "b";
     String text1 = "a" + text2;
@@ -17,7 +22,8 @@ public  class Test {
  //   float f = 1.23f;
     static int number;
 
- 
+    int i,j=0,k;
+
 
 
     LocalDate D1 = LocalDate.of(2019, 1, 1);    
@@ -38,30 +44,65 @@ public  class Test {
     int increase(int number){
         return number++;
     }
+
+    public static void print(){
+        System.out.println("Test print");
+    }
+
+   
 }
 
 class boo extends Test{
+    static String string = "boostring";
+    String statstring = "boostatstring";
+
     static String text;
 
     String text2 = "b1boo";
 
-    
 
     public static void mthod(){
-   //     super.mthodprint();
+    //    super.mthodprint();
+    }
+    static
+    {
+        System.out.println(string);
+
+    }
+
+    {
+        System.out.println(statstring);
     }
 
     static boolean x;
 
+    public static void print(){
+        System.out.println("boo print");
+       // System.out.println(this.string);  compile error this cannot used in static method
+    }
 
-
+    
 
     public static void main(String[] args) {
+        // Test test = new boo();
+        // System.out.println(test.string+"  "+test.statstring);
+        // test.print();
+
+        // boo test1 = (boo) test;
+        // System.out.println(test1.string+"  "+test1.statstring);
+        // test1.print();
+
+        
+        // test.k=test.i+test.j;
+        // final int ii;
+        // ii=100;
       
 
-        Test a = new Test();
-        System.out.println(a.increase(1));
-        System.out.println(1);
+
+
+        // Test a = new Test();
+        // System.out.println(a.increase(1));
+        // System.out.println(1);
 
         // a = new Test();
 
