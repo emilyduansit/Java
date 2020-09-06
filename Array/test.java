@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class test {
 
@@ -35,6 +37,27 @@ public class test {
 
    // System.out.println(Arrays.compare(array1,array2));
    System.out.println(Arrays.mismatch(array1,array2));
+
+
+   List list = new ArrayList<>(List.of("A"));
+   String[]  array3={"B","C"};
+   String[]  array4= (String[]) list.toArray(array3);
+   System.out.println(list);
+   System.out.println(Arrays.toString(array3));
+   System.out.println(Arrays.toString(array4));
+
+   Object[]  array5 =list.toArray();
+   System.out.println(Arrays.toString(array5));
+
+   String[] array6 = new String[2];
+   String[] array7 = (String[]) list.toArray(array6);
+   System.out.println(Arrays.toString(array7));
+
+   int i =070;
+   System.out.println(i);
+
+
+
     
 }
     

@@ -22,6 +22,7 @@ class StaticComponents
 
 class SubStaticComponents extends StaticComponents
 {
+     int  staticVariable;
      public static void staticMethod()
      {
           System.out.println("SubStaticComponents");
@@ -45,6 +46,7 @@ class MainClass
 
           StaticComponents s = new SubStaticComponents();
           s.staticMethod();
+          s.staticVariable =10;
   
      }
 }

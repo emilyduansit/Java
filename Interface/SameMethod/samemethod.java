@@ -16,7 +16,7 @@ interface Bar{
 
 public class samemethod implements Foo, Bar {
     public void mymethod(){
-        System.out.println(Bar.field);
+        System.out.println("test");
     }
 
     public void mymethod(String s){

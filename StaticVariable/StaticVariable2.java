@@ -5,6 +5,7 @@ public class StaticVariable2 {
        count++;
        System.out.println("count = "+count);
    }
+   
    public static void main(String args[])
    {
     StaticVariable2 obj1=new StaticVariable2();

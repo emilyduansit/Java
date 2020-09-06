@@ -1,0 +1,66 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GenericsInJava<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "GenericsInJava",
+            "projectName": "String_8ece218a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringExample<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "StringExample",
+            "projectName": "String_8ece218a",
+            "args": ["1 2","3"]
+            
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringExample1<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "StringExample1",
+            "projectName": "String_8ece218a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringIntern<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "StringIntern.StringIntern",
+            "projectName": "String_8ece218a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringStore<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "StringStore",
+            "projectName": "String_8ece218a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringStore1<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "StringStore1",
+            "projectName": "String_8ece218a"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-stringbuilder<String_8ece218a>",
+            "request": "launch",
+            "mainClass": "stringbuilder",
+            "projectName": "String_8ece218a"
+        }
+    ]
+}

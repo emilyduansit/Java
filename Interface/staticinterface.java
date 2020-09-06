@@ -36,7 +36,7 @@ public class staticinterface extends Fooo{
 
     public static void main(String[] args) {
         Fooo f = new staticinterface();
-        //f.print();              //这里可以用 
+        f.print();              //这里可以用, 因为这是从class继承来的 
         Fooo.print();
         //System.out.println(f.text);
         System.out.println(Fooo.text);
